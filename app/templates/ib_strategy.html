@@ -1,0 +1,68 @@
+{% extends "base.html" %}
+{% block title %}Inside Bar Trading Strategy{% endblock %}
+{% block description %}Inside Bar Patter Trading Strategy can be used to detect trend reversals and trend continuation when trading stocks and options in the market. The Inside 
+Bar strategy can help you be more efficient and proftable when used in conjunction with other trading strategies.{% endblock %}
+{% block body %}
+<div>    <svg style="display:block; height: 0; width: 0"><symbol id="exclamation-triangle-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8.982 1.566a1.13 1.13 0 0 0-1.96 0L.165 13.233c-.457.778.091 1.767.98 1.767h13.713c.889 0 1.438-.99.98-1.767L8.982 1.566zM8 5c.535 0 .954.462.9.995l-.35 3.507a.552.552 0 0 1-1.1 0L7.1 5.995A.905.905 0 0 1 8 5zm.002 6a1 1 0 1 1 0 2 1 1 0 0 1 0-2z"/>
+  </symbol>
+  <symbol id="info-fill" fill="currentColor" viewBox="0 0 16 16">
+    <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm.93-9.412-1 4.705c-.07.34.029.533.304.533.194 0 .487-.07.686-.246l-.088.416c-.287.346-.92.598-1.465.598-.703 0-1.002-.422-.808-1.319l.738-3.468c.064-.293.006-.399-.287-.47l-.451-.081.082-.381 2.29-.287zM8 5.5a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+  </symbol></svg></div>
+<div class="jumbotron">
+
+  <h1>Inside Bar Trading Strategy</h1>
+  <p class="lead">The inside bar pattern trading strategy is a stock and options strategy that involves looking at the chart for a candlestick that had a high and a low that was within 
+      the bounds of the previous candlesticks high and low.
+  </p>
+  
+  <div class="alert alert-primary d-flex align-items-center" role="alert">
+    <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+    <div>
+        Be sure to check out our <a href="/tools/ibob_stock_screener"><b>Free Inside and Outside Bar Stock Screener</b></a> to easily find stocks with these patterns.
+    </div>
+  </div>
+  <p>Here are some examples of inside bars, labeled as IB. As you can see, each of the inside bar candles has a lower high and a higher low than the previous candle, making it within the 
+      bounds of the previous candle.
+  </p>
+  <img src="/static/img/inside_bar_examples.png" alt="Examples of Inside Bar Pattern Candlesticks"/>
+  <h2>What Does the Inside Bar Pattern Represent?</h2>
+  <p>An inside bar represents consolidation in the stock. Consolidation often happens after the market has been in a recent uptrend or downtrend. Think of it as the stock is 
+      taking a breather before its next move. This move could be a reversal or it could continue the trend that it was on. Inside bars represent reduced volatility in the stock.
+  </p>
+  <p>The inside bar pattern appears with a lower high and a higher low because the bears are failing to create lower lows and the bulls in the market are failing to create higher highs. This means there is not enough buying pressure to break the previous bars high and not enough selling pressure to break the low of the previous candle.</p>
+  <h2>Inside Bar Examples</h2>
+  <p>There are a few different types of inside bars that you will run across during your stock trading career. Let's take a look at the common inside bar patterns and what they mean.</p>
+  <h3>Tight Range Inside Bar</h3>
+  <p><img src="/static/img/tight-inside-bar-pattern.png" alt="Tight Inside Bar Candlestick Pattern"/></p>
+  <p>This is one of the most common types of inside bars that you will see. Notice how the body and the wicks of the inside bar are fully contained within the body of the previous candle. This candle would represent low volatility and also indecision in the stock. Trading is happening within a very tight range with no movement outside the range of the previous candle.
+  </p>
+  <h3>Larger Range Inside Bar</h3>
+  <p><img src="/static/img/large-range-inside-bar-pattern.png" alt="Large Range Inside Bar Candlestick Pattern"/></p>
+  <p>Larger range inside bars can show signs of reversal or indecision. In this case, we have a green inside bar with a large range following a red bar. This green inside bar may represent a reversal in the trend. If we take a look at more of the chart, we can see this exactly what happened, a reversal. See the chart below.</p>
+  <p><img src="/static/img/large-range-inside-bar-full-chart.png" alt="Large Range Inside Bar Full Chart Example" /></p>
+  <h2>Trading the Inside Bar Pattern Strategy</h2>
+  <p>How you will trade the inside bar will be different for each scenario. The bars themselves are typically not buying or selling triggers. Most times, we are looking for what the next 
+      candle or candles do following an inside bar.
+
+      <div class="alert alert-warning d-flex align-items-center" role="alert">
+        <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Warning:"><use xlink:href="#exclamation-triangle-fill"/></svg>
+        <div>
+            You can trade inside bars on multiple timeframes but for less experienced traders it is better to use the daily chart.
+        </div>
+      </div>
+
+  </p>
+  <h3>Trading Inside Bars Following an Uptrend or Downtrend</h3>
+  <p>It is common for traders to use inside bars as a signal of reversal or continuation following a recent uptrend or downtrend in the market. When you have an ongoing uptrend or downtrend and you see an inside bar, you will want to watch the next bar or bars to confirm a reversal or continuation. Let's look at some examples of this in action.</p>
+  <p class="lead fw-bold">Inside Bar Trend Reversal</p>
+  <p><img src="/static/img/inside-bar-trading-example1.png" alt="Example of inside bar trading - downtrend reversal" /></p>
+  <p>As you can see in the chart above, this stock (KR: Kroger) had been in a downtrend for a few days, then we have an inside bar. If we watch the following day's candles for a break above or below the inside bar candles range, we can see that we would take a long position and ride the next few candles for a decent return.</p>
+  <p class="lead fw-bold">Inside Bar - Trend Continuation</p>
+  <p>In the chart below, we are looking at an inside bar signaling the continuation of an uptrend (AMC). This stock is in an uptrend when an inside bar hits, if we watch the next candle we see a break above followed by a continuation of the uptrend.</p>
+  <p><img src="/static/img/inside-bar-trading-example2.png" alt="Example of inside bar trading - uptrend continuation" /></p>
+  <p class="lead fw-bold">Inside Bar Fakeout</p>
+  <p>Many times, it is not enough to just look at the next candle, you must look at more than one candle following an inside bar. Fakeouts will happen and if your strategy is to take a trade as soon as the range of the inside bar is broken, you can be left in a bad position. It is also important to use stop losses to reduce the amount of loss you will see during such a fakeout. Looking at the chart below, you see an inside bar and the next bar broke above the range of that inside bar. Many traders would enter a long position when that range was broken. Clearly, we can see in this chart that would have been a mistake because the market turns on the next candle into a downtrend. Whenever you have a gap up after an inside bar, many times it is best to wait for a retest of the inside bars high or low before entering a trade.</p>
+  <p><img src="/static/img/inside-bar-trading-example3.png" alt="Example of inside bar trading - fake out" /></p>
+</div>
+{% endblock %}
